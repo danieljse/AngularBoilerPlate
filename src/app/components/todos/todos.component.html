@@ -1,0 +1,12 @@
+<div>
+  <app-add-todo
+  (TodosComponentPArrent)="addtodo($event)"></app-add-todo>
+  <app-todo-item 
+  *ngFor='let td of td' 
+  [tdo]="td"
+  (deleteTodo)="deleteTodoParrent($event)"
+  >
+  
+  </app-todo-item>
+    
+</div>
